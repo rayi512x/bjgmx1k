@@ -50,7 +50,7 @@ int main(void) {
 		exitcode = game(dealer, user, card_buf, &money);
 
 		if (exitcode == 0) {
-			printf("Pencet ENTER! ");
+			printf("Press ENTER! ");
 			while (getchar() != '\r' && getchar() != '\n');
 			replayPrep(user, dealer);
 		} else finished = true;
@@ -63,9 +63,8 @@ int main(void) {
 	printf("\33[2J\33[H\33[?1049l");
 
 	if (exitcode == 2) {
-		printf("Habis (mampus)\n");
+		printf("You ran out of money.\n");
 		return 1;
 	}
-	else printf("Dadah! Kapan-kapan main lagi yh!!!\n");
 	return 0;
 }
