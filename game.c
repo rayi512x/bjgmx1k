@@ -128,9 +128,9 @@ int game(Player* dealer, Player* user, char* card_buf, int* money) {
 	*money += bet;
 
 	switch (dtr) {
-		case 0: printf("\nYou win!\33[u+ $%i = $%i    \n", bet, *money); break;
+		case 0: printf("\nYou win!\33[u+ $%i = $%i\n", bet, *money); break;
 		case 1: printf("\nYou lose!\33[u\n"); break;
-		case 2: printf("\nPush!\33[u+ $%i = $%i    \n", bet, *money); break;
+		case 2: printf("\nPush!\33[u+ $%i = $%i\n", bet, *money); break;
 	}
 
 userBust:
